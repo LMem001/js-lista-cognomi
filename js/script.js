@@ -5,7 +5,10 @@ scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova */
 
 var surname_list = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
 // ask user's surname
-var surname_user = "Malpiedi";
+do {
+  var surname_user = prompt("Isert your surname");
+} while(surname_user == "");
+surname_user = surname_user.charAt(0).toUpperCase() + surname_user.slice(1);
 surname_list.push(surname_user);
 // sort list
 surname_list.sort();
