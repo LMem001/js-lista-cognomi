@@ -16,4 +16,4 @@ surname_list.sort();
 // print list
 console.log(surname_list);
 // print user position
-console.log("The guest is at the " + surname_list.indexOf(surname_user) +" th position in the list");
+console.log("The guest is at the " + (surname_list.indexOf(surname_user) + 1) +" th position in the list");
