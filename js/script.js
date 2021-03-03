@@ -8,6 +8,7 @@ var surname_list = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
 do {
   var surname_user = prompt("Isert your surname");
 } while(surname_user == "" || parseInt(surname_user));
+// set the first character to uppercase
 surname_user = surname_user.charAt(0).toUpperCase() + surname_user.slice(1);
 surname_list.push(surname_user);
 // sort list
@@ -15,5 +16,4 @@ surname_list.sort();
 // print list
 console.log(surname_list);
 // print user position
-console.log(surname_list.indexOf(surname_user));
-console.log(surname_user);
+console.log("The guest is at the " + surname_list.indexOf(surname_user) +" th position in the list");
